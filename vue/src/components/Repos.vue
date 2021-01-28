@@ -1,13 +1,15 @@
 <template>
     <div class="card">
         <div class="row">
-            <div class="col1">
-                <a :href="repos.html_url" target="_blank" >{{repos.name}}</a>
-            </div>
-            <div class="card2">
-                <div><span class="cor">Star: {{ repos.stargazers_count }}</span></div>
-                <div><span class="cor">Watch: {{ repos.watchers_count }}</span></div>
-                <div><span class="cor">Forks: {{ repos.forks_count }} </span></div>
+            <div class="text1">
+                <div class="col1">
+                    <a :href="repos.html_url" target="_blank" >{{repos.name}}</a>
+                </div>
+                <div class="card2">
+                    <div><span class="cor">Star: {{ repos.stargazers_count }}</span></div>
+                    <div><span class="cor">Watch: {{ repos.watchers_count }}</span></div>
+                    <div><span class="cor">Forks: {{ repos.forks_count }} </span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -31,10 +33,14 @@ export default {
      max-width: 500px;  
   
 }
-.card2, .col1{
+.text1{
     background-color: black;
-    padding: 10px;
+    padding: 20px;
     border-radius: 1px;
+    box-shadow: 1px 1px 2px 1px #33ffd6;
+    width: 250px;
+    height: 100px;
 }
+
 
 </style>

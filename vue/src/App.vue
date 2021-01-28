@@ -38,7 +38,7 @@ export default {
         url:'https://api.github.com/users',
         client_id:'37f133c5fc0bc67166e3',
         client_secret:'f2f03f09a360a5223243bac3508124eea6ae3a32',
-        count: 7,
+        count: 4,
         sort: "created: asc"
       },
       user:[],
